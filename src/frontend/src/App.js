@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { getAllStudents, deleteStudent } from "./client";
 
-import {Layout, Menu, Breadcrumb, Table, Spin,
-    Empty, Button, Badge, Tag, Popconfirm, Radio} from 'antd';
+import {
+    Layout, Menu, Breadcrumb, Table, Spin,
+    Empty, Button, Badge, Tag, Popconfirm, Radio, Divider
+} from 'antd';
 import {
     DesktopOutlined,
     PieChartOutlined,
@@ -217,7 +219,12 @@ function App() {
                     {renderStudents()}
                 </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Spring app demo</Footer>
+            <Footer style={{ textAlign: 'center' }}>
+                Spring app demo
+                <Divider>
+                    <a target="_blank" rel="noreferrer" href="https://www.google.com/">Click here to go google.com</a>
+                </Divider>
+            </Footer>
         </Layout>
     </Layout>
 
